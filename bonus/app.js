@@ -9,7 +9,7 @@ const app = new Vue({
     methods: {
         fetchMovies(){
             axios
-            .get('http://localhost:8888/php-oop-1/bonus/movies.php')
+            .get("./movies.php")
             .then((res)=> {
                 console.log(res)
                 const {response} = res.data
